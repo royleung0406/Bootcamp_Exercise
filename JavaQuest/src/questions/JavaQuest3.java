@@ -70,49 +70,49 @@ public class JavaQuest3 {
         case 5:
         monthOfName = "May";
         number_Of_DaysInMonth = 31;
-        System.out.println(monthOfName + " " + year + "" + "has" + number_Of_DaysInMonth + " days" );
+        System.out.println(monthOfName + " " + year + " " + "has " + number_Of_DaysInMonth + " days" );
         break;
           
         case 6:
         monthOfName = "June";
         number_Of_DaysInMonth = 30;
-        System.out.println(monthOfName + "" + year + "" + "has" + number_Of_DaysInMonth + " days" );
+        System.out.println(monthOfName + " " + year + " " + "has " + number_Of_DaysInMonth + " days" );
         break;
 
         case 7:
         monthOfName = "July";
         number_Of_DaysInMonth = 31;
-        System.out.println(monthOfName + "" + year + "" + "has" + number_Of_DaysInMonth + " days" );
+        System.out.println(monthOfName + " " + year + " " + " has" + number_Of_DaysInMonth + " days" );
         break;
 
         case 8:
         monthOfName = "August";
         number_Of_DaysInMonth = 31;
-        System.out.println(monthOfName + "" + year + "" + "has" + number_Of_DaysInMonth + " days" );
+        System.out.println(monthOfName + " " + year + " " + "has " + number_Of_DaysInMonth + " days" );
         break;
 
         case 9:
         monthOfName = "September";
         number_Of_DaysInMonth = 30;
-        System.out.println(monthOfName + "" + year + "" + "has" + number_Of_DaysInMonth + " days" );
+        System.out.println(monthOfName + " " + year + " " + "has " + number_Of_DaysInMonth + " days" );
         break;
 
         case 10:
         monthOfName = "October";
         number_Of_DaysInMonth = 31;
-        System.out.println(monthOfName + "" + year + "" + "has" + number_Of_DaysInMonth + " days" );
+        System.out.println(monthOfName + " " + year + " " + "has " + number_Of_DaysInMonth + " days" );
         break;
 
         case 11:
         monthOfName = "November";
         number_Of_DaysInMonth = 30;
-        System.out.println(monthOfName + "" + year + "" + "has" + number_Of_DaysInMonth + " days" );
+        System.out.println(monthOfName + " " + year + " " + "has " + number_Of_DaysInMonth + " days" );
         break;
 
         case 12:
         monthOfName = "December";
         number_Of_DaysInMonth = 31;
-        System.out.println(monthOfName + "" + year + "" + "has" + number_Of_DaysInMonth + " days" );
+        System.out.println(monthOfName + " " + year + " " + "has " + number_Of_DaysInMonth + " days" );
         break;
       }
 
