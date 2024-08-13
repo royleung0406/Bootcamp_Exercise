@@ -31,20 +31,29 @@ public class JavaQuest10 {
     // code here ...
     int temp = 0;
     int arrayTemp =0;
-    temp = my_array[indexPosition];
-    my_array[indexPosition] = newValue;
-    for(int i = indexPosition; i <my_array.length; i++){
-      for(int j = indexPosition; j < my_array.length -1; j++)
-      if(indexPosition < my_array.length -1){
-        arrayTemp = my_array[indexPosition +1];
-        my_array[indexPosition +1] = my_array[indexPosition +2];
-        my_array[indexPosition +2] = arrayTemp;
-      }System.out.println(Arrays.toString(my_array2));
+    int[] newArr = new int []{ 25, 14, 56, 15, 36, 56, 77, 18, 29, 49};
+      if (indexPosition == my_array.length - 1 ) {
+        newArr = my_array;
+        System.out.println("New Array: " + Arrays.toString(newArr));
+      }
+      for(int i = 0; i <my_array.length -1; i++){
+      if (i != indexPosition && i < indexPosition){
+        continue;
+      }
+      if(i == indexPosition){
+         arrayTemp = my_array[i];
+          newArr[i] = newValue;
+          newArr[i+1] = arrayTemp;
+      }
+      if(i > indexPosition){
+        arrayTemp = my_array[i];
+          newArr[i+1] = arrayTemp;
+        }
+          
     }
-    System.out.println(Arrays.toString(my_array));
+    my_array = newArr;
 
 
-    // my_array = newArr;
-    //System.out.println("New Array: " + Arrays.toString(newArr));
+System.out.println("New Array: " + Arrays.toString(newArr));
   }
 }
