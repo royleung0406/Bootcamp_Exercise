@@ -23,7 +23,7 @@ public class JavaQuest11 {
   public static int findDelayedArrivalTime(int arrivalTime, int delayedTime) {
     // code here ...
     int totalTime = arrivalTime + delayedTime;
-    if (totalTime >= 24){
+    if (totalTime >=   24){
       totalTime -= 24;
     }
     return totalTime;
