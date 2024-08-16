@@ -31,30 +31,19 @@ public class JavaQuest12 {
   // Code a method here to return an array of two numbers that sum up to the
   // target
 
-  public static int [] twoSum (int [] arr, int target) {
-    int total = 0, ans1 = 0, ans2 = 0, pos1 =0, pos2 =0;
-    for (int i = 0; i < arr.length; i++){
-        if (arr[i] < target ){
-          ans1 = arr[i];
-          pos1 = i;
-      for(int j = i +1; j < arr.length-i; j++ ){
-      System.out.println("i" + i);
-      System.out.println("j"+ j);
-      if(arr[i] + arr[j] == target){
-          ans2 = arr[j];
-          pos2 = j;
-          System.out.println(ans1);
-          System.out.println(ans2);
-         // break;
-         return new int[]{i,j};
-        }else if(arr[i] + arr[j] != target){
-          pos1 = -1;
-          pos2 = -1;
+  public static int[] twoSum(int[] arr, int target) {
+    int pos1 = -1, pos2 = -1;
+
+    for (int i = 0; i < arr.length; i++) {
+        for (int j = i + 1; j < arr.length; j++) {
+            if (arr[i] + arr[j] == target) {
+                pos1 = i;
+                pos2 = j;
+                return new int[]{pos1, pos2};
+            }
         }
-
-      } 
-    } 
-    }return new int [] {pos1 , pos2};
-  } 
+    }
+    
+    return new int[]{pos1, pos2};
+  }
 }
-

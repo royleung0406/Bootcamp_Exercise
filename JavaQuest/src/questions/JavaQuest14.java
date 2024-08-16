@@ -1,4 +1,4 @@
-package questions;
+import java.util.Arrays;
 
 public class JavaQuest14 {
   // Given an integer x, return true if x is a palindrome (迴文), and false
@@ -40,6 +40,15 @@ public class JavaQuest14 {
   // Code a method here to return true if the integer is palindrome, otherwise
   // false
   public static boolean palindrome(int num) {
-    
-  }
+    int reversed = 0;
+    int originalNumber = num;
+
+    while (num > 0) {
+        int digit = num % 10;
+        reversed = reversed * 10 + digit;
+        num = num/ 10;
+    }
+
+    return originalNumber == reversed;
+}
 }
